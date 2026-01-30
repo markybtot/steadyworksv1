@@ -23,9 +23,9 @@ const Hero = () => {
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-6 animate-fade-up delay-100">
-            Pay made{" "}
+            Your work, your paye,{" "}
             <span className="text-gradient relative">
-              simple
+              your way
               <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
                 <path d="M2 8C50 2 150 2 198 8" stroke="hsl(var(--accent))" strokeWidth="4" strokeLinecap="round"/>
               </svg>
