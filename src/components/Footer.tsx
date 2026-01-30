@@ -12,7 +12,7 @@ const Footer = () => {
                 <span className="text-primary-foreground font-bold text-xl">S</span>
               </div>
               <span className="text-2xl font-bold">
-                Steady<span className="text-primary">Paye</span>
+                Steady<span className="text-primary">Works</span>
               </span>
             </div>
             <p className="text-background/70 mb-6">
@@ -52,7 +52,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <a href="mailto:hello@steadypaye.co.uk" className="text-background/70 hover:text-primary transition-colors">hello@steadypaye.co.uk</a>
+                <a href="mailto:hello@steadyworks.co.uk" className="text-background/70 hover:text-primary transition-colors">hello@steadyworks.co.uk</a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
@@ -65,7 +65,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-background/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/50 text-sm">
-            © {new Date().getFullYear()} SteadyPaye. All rights reserved.
+            © {new Date().getFullYear()} SteadyWorks. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-background/50 hover:text-primary text-sm transition-colors">Privacy Policy</a>

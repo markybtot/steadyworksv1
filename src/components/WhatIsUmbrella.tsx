@@ -20,7 +20,7 @@ const WhatIsUmbrella = () => {
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
               An umbrella company employs contractors working on temporary assignments or contracts. 
-              Joining a compliant umbrella company like SteadyPaye gives you increased flexibility, 
+              Joining a compliant umbrella company like SteadyWorks gives you increased flexibility, 
               while taking advantage of all the rights and benefits a permanent employee would typically receive.
             </p>
 
