@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Clock } from "lucide-react";
 import heroBg from "@/assets/hero-bg.png";
-import hmrcStamp from "@/assets/hmrc-stamp.png";
 
 const Hero = () => {
   return (
@@ -50,15 +49,6 @@ const Hero = () => {
             <Button className="btn-outline text-lg" asChild>
               <a href="#how-it-works">See How it Works</a>
             </Button>
-          </div>
-
-          {/* Gold HMRC Compliance Stamp */}
-          <div className="flex justify-center mb-12 animate-fade-up delay-400">
-            <img 
-              src={hmrcStamp} 
-              alt="100% HMRC Compliant" 
-              className="w-36 h-36 md:w-44 md:h-44 drop-shadow-2xl transform rotate-[-8deg] hover:rotate-0 transition-transform duration-300"
-            />
           </div>
 
           {/* Trust Badges */}
