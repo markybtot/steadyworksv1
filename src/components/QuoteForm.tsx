@@ -34,8 +34,7 @@ const QuoteForm = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-6xl mx-auto">
           {/* Left Content */}
           <div className="text-white">
-            <span className="text-primary font-semibold text-sm uppercase tracking-wider">Get Started</span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               Get your free <span className="text-gradient">quote</span> today
             </h2>
             <p className="text-white/80 text-lg mb-8">
