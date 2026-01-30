@@ -22,7 +22,7 @@ const Header = () => {
               <span className="text-primary-foreground font-bold text-xl">S</span>
             </div>
             <span className="text-2xl font-bold text-foreground">
-              Steady<span className="text-primary">Paye</span>
+              Steady<span className="text-primary">Works</span>
             </span>
           </a>
 

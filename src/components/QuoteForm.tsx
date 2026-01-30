@@ -53,7 +53,7 @@ const QuoteForm = () => {
 
             <div className="mt-10 p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10">
               <p className="text-white/70 text-sm">
-                "SteadyPaye made my transition to contracting seamless. Their support team is always available and my payments arrive on time every single week."
+                "SteadyWorks made my transition to contracting seamless. Their support team is always available and my payments arrive on time every single week."
               </p>
               <p className="mt-4 font-semibold text-white">— Sarah M., IT Contractor</p>
             </div>

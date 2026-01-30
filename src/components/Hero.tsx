@@ -32,7 +32,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto animate-fade-up delay-200">
-            Join thousands of UK contractors who trust SteadyPaye for compliant, hassle-free umbrella employment. Get paid on time, every time.
+            Join thousands of UK contractors who trust SteadyWorks for compliant, hassle-free umbrella employment. Get paid on time, every time.
           </p>
 
           {/* CTAs */}
