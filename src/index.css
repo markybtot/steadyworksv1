@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* Fresh, modern teal/emerald brand colors */
+    /* Fresh, modern blue brand colors matching logo */
     --background: 0 0% 100%;
     --foreground: 220 20% 10%;
 
@@ -16,16 +16,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 20% 10%;
 
-    /* Vibrant teal primary */
-    --primary: 168 80% 40%;
+    /* Blue primary matching logo */
+    --primary: 217 70% 55%;
     --primary-foreground: 0 0% 100%;
 
-    /* Warm coral accent for CTAs */
-    --accent: 16 90% 55%;
+    /* Vibrant orange accent for CTAs - stands out against blue */
+    --accent: 24 95% 53%;
     --accent-foreground: 0 0% 100%;
 
-    --secondary: 168 30% 95%;
-    --secondary-foreground: 168 80% 30%;
+    --secondary: 217 30% 95%;
+    --secondary-foreground: 217 70% 40%;
 
     --muted: 220 14% 96%;
     --muted-foreground: 220 10% 45%;
@@ -35,27 +35,27 @@
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 168 80% 40%;
+    --ring: 217 70% 55%;
 
     --radius: 0.75rem;
 
-    /* Dark section colors */
-    --dark-bg: 220 25% 12%;
-    --dark-surface: 220 20% 18%;
+    /* Dark section colors - navy blue */
+    --dark-bg: 217 50% 15%;
+    --dark-surface: 217 45% 20%;
     --dark-text: 0 0% 100%;
-    --dark-muted: 220 15% 70%;
+    --dark-muted: 217 20% 70%;
 
     /* Gradient definitions */
-    --gradient-hero: linear-gradient(135deg, hsl(220 25% 12%) 0%, hsl(220 20% 18%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(168 80% 40%) 0%, hsl(168 70% 50%) 100%);
-    --gradient-warm: linear-gradient(135deg, hsl(16 90% 55%) 0%, hsl(30 90% 55%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(217 50% 15%) 0%, hsl(217 45% 22%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(217 70% 55%) 0%, hsl(217 80% 60%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(24 95% 53%) 0%, hsl(35 95% 55%) 100%);
 
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-    --shadow-glow: 0 0 40px -10px hsl(168 80% 40% / 0.4);
+    --shadow-glow: 0 0 40px -10px hsl(217 70% 55% / 0.4);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -64,7 +64,7 @@
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 168 80% 40%;
+    --sidebar-ring: 217 70% 55%;
   }
 
   .dark {
@@ -77,7 +77,7 @@
     --popover: 220 20% 18%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 168 80% 50%;
+    --primary: 217 80% 60%;
     --primary-foreground: 220 25% 12%;
 
     --secondary: 220 20% 22%;
@@ -86,24 +86,24 @@
     --muted: 220 20% 22%;
     --muted-foreground: 220 15% 70%;
 
-    --accent: 16 90% 60%;
+    --accent: 24 95% 58%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 20% 22%;
-    --input: 220 20% 22%;
-    --ring: 168 80% 50%;
+    --border: 217 20% 22%;
+    --input: 217 20% 22%;
+    --ring: 217 80% 60%;
     
-    --sidebar-background: 220 25% 12%;
+    --sidebar-background: 217 50% 12%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 168 80% 50%;
-    --sidebar-primary-foreground: 220 25% 12%;
-    --sidebar-accent: 220 20% 22%;
+    --sidebar-primary: 217 80% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 20% 22%;
     --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 220 20% 22%;
-    --sidebar-ring: 168 80% 50%;
+    --sidebar-border: 217 20% 22%;
+    --sidebar-ring: 217 80% 60%;
   }
 }
 
