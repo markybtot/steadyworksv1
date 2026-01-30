@@ -3,10 +3,10 @@ import umbrellaIllustration from "@/assets/umbrella-illustration.png";
 
 const WhatIsUmbrella = () => {
   const points = [
-    "Become employed with all the benefits of a permanent role",
-    "Tax and NI handled correctly—stay compliant with HMRC",
-    "Continuous employment record for mortgages & loans",
-    "Work multiple contracts through one employer",
+    { text: "Become employed with all the benefits of a permanent role", highlight: null },
+    { text: "Tax and NI handled correctly ", highlight: "stay compliant with HMRC" },
+    { text: "Continuous employment record for mortgages & loans", highlight: null },
+    { text: "Work multiple contracts through one employer", highlight: null },
   ];
 
   return (
@@ -28,7 +28,10 @@ const WhatIsUmbrella = () => {
               {points.map((point, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">{point}</span>
+                  <span className="text-foreground">
+                    {point.text}
+                    {point.highlight && <span className="text-gradient font-bold">{point.highlight}</span>}
+                  </span>
                 </li>
               ))}
             </ul>
