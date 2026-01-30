@@ -1,4 +1,5 @@
-import { Umbrella, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
+import umbrellaIllustration from "@/assets/umbrella-illustration.png";
 
 const WhatIsUmbrella = () => {
   const points = [
@@ -43,9 +44,11 @@ const WhatIsUmbrella = () => {
               {/* Card */}
               <div className="relative bg-card rounded-3xl p-8 shadow-xl">
                 <div className="flex justify-center mb-6">
-                  <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center animate-float">
-                    <Umbrella className="w-12 h-12 text-primary" />
-                  </div>
+                  <img 
+                    src={umbrellaIllustration} 
+                    alt="Umbrella illustration" 
+                    className="w-40 h-40 object-contain animate-float"
+                  />
                 </div>
                 
                 <div className="text-center">
