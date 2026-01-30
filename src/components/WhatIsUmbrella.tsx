@@ -47,7 +47,7 @@ const WhatIsUmbrella = () => {
                   <img 
                     src={umbrellaIllustration} 
                     alt="Umbrella illustration" 
-                    className="w-40 h-40 object-contain animate-float"
+                    className="w-44 h-44 object-contain"
                   />
                 </div>
                 
