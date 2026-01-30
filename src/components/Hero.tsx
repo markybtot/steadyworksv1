@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Clock, BadgeCheck } from "lucide-react";
+import { ArrowRight, Shield, Clock } from "lucide-react";
 import heroBg from "@/assets/hero-bg.png";
+import hmrcStamp from "@/assets/hmrc-stamp.png";
 
 const Hero = () => {
   return (
@@ -53,19 +54,11 @@ const Hero = () => {
 
           {/* Gold HMRC Compliance Stamp */}
           <div className="flex justify-center mb-12 animate-fade-up delay-400">
-            <div className="relative">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-[#D4AF37] bg-gradient-to-br from-[#FFD700] via-[#D4AF37] to-[#B8860B] flex items-center justify-center shadow-2xl transform rotate-[-8deg] hover:rotate-0 transition-transform duration-300">
-                <div className="w-28 h-28 md:w-36 md:h-36 rounded-full border-2 border-[#B8860B]/50 flex flex-col items-center justify-center text-center p-2">
-                  <span className="text-[#3D2914] font-extrabold text-xs md:text-sm uppercase tracking-wider">100%</span>
-                  <span className="text-[#3D2914] font-extrabold text-sm md:text-lg uppercase tracking-tight leading-tight">HMRC</span>
-                  <span className="text-[#3D2914] font-extrabold text-xs md:text-sm uppercase tracking-wider">Compliant</span>
-                  <div className="w-12 h-0.5 bg-[#3D2914]/40 my-1"></div>
-                  <span className="text-[#3D2914]/70 text-[8px] md:text-[10px] font-semibold uppercase">Verified</span>
-                </div>
-              </div>
-              {/* Shine effect */}
-              <div className="absolute top-2 left-4 w-6 h-6 md:w-8 md:h-8 bg-white/30 rounded-full blur-sm"></div>
-            </div>
+            <img 
+              src={hmrcStamp} 
+              alt="100% HMRC Compliant" 
+              className="w-36 h-36 md:w-44 md:h-44 drop-shadow-2xl transform rotate-[-8deg] hover:rotate-0 transition-transform duration-300"
+            />
           </div>
 
           {/* Trust Badges */}
