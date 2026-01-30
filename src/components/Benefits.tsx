@@ -29,9 +29,8 @@ const Benefits = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-primary font-semibold text-sm uppercase tracking-wider">Benefits</span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6">
-            And <span className="text-gradient-warm">the benefits</span> of umbrella?
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            And <span className="text-gradient">the benefits</span> of umbrella?
           </h2>
           <p className="text-muted-foreground text-lg">
             For most contractors, an umbrella company is the easiest way to get paid while enjoying all the benefits of employment.
