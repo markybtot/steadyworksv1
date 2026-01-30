@@ -28,8 +28,7 @@ const Services = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="text-primary font-semibold text-sm uppercase tracking-wider">Our Services</span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Two simple solutions for your contracting needs
           </h2>
           <p className="text-muted-foreground text-lg">
