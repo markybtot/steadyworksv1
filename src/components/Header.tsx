@@ -36,13 +36,12 @@ const Header = () => {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:08001234567" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-              <Phone className="w-4 h-4" />
-              <span className="font-medium">0800 123 4567</span>
-            </a>
-            <Button className="btn-primary" asChild>
-              <a href="#get-a-quote">Get a Quote</a>
+          <div className="hidden lg:flex items-center gap-3">
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-5 py-2 rounded-lg transition-all" asChild>
+              <a href="#get-a-quote">Contractor Sign Up</a>
+            </Button>
+            <Button className="bg-[hsl(217,50%,35%)] hover:bg-[hsl(217,50%,30%)] text-white font-semibold px-5 py-2 rounded-lg transition-all" asChild>
+              <a href="#get-a-quote">Agency Sign Up</a>
             </Button>
           </div>
 
@@ -70,12 +69,11 @@ const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <a href="tel:08001234567" className="flex items-center gap-2 text-muted-foreground py-2">
-                <Phone className="w-4 h-4" />
-                <span className="font-medium">0800 123 4567</span>
-              </a>
-              <Button className="btn-primary w-full mt-2" asChild>
-                <a href="#get-a-quote">Get a Quote</a>
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold w-full mt-2 rounded-lg" asChild>
+                <a href="#get-a-quote">Contractor Sign Up</a>
+              </Button>
+              <Button className="bg-[hsl(217,50%,35%)] hover:bg-[hsl(217,50%,30%)] text-white font-semibold w-full mt-2 rounded-lg" asChild>
+                <a href="#get-a-quote">Agency Sign Up</a>
               </Button>
             </nav>
           </div>
