@@ -15,8 +15,7 @@ const WhatIsUmbrella = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content */}
           <div>
-            <span className="text-primary font-semibold text-sm uppercase tracking-wider">How It Works</span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               <span className="text-gradient">What</span> exactly is umbrella?
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
