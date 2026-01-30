@@ -16,9 +16,9 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 animate-fade-up">
-            <Shield className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-white/90">FCSA Accredited Umbrella Company</span>
+          <div className="inline-flex items-center gap-2 bg-[#E21B4D] rounded-full px-4 py-2 mb-8 animate-fade-up">
+            <Shield className="w-4 h-4 text-white" />
+            <span className="text-sm font-medium text-white">100% HMRC Compliant</span>
           </div>
 
           {/* Headline */}
