@@ -1,14 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Clock, BadgeCheck } from "lucide-react";
+import heroBg from "@/assets/hero-bg.png";
 
 const Hero = () => {
   return (
-    <section className="section-dark section-curve-bottom pt-32 pb-32 lg:pt-40 lg:pb-40 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl" />
-      </div>
+    <section className="relative section-curve-bottom pt-32 pb-32 lg:pt-40 lg:pb-40 overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      />
+      {/* Dark Overlay for text readability */}
+      <div className="absolute inset-0 bg-black/50" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
