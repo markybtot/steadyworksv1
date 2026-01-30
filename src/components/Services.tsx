@@ -54,12 +54,12 @@ const Services = () => {
             className={cn(
               "px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 relative",
               activeTab === "umbrella-plus"
-                ? "bg-accent text-accent-foreground shadow-lg"
+                ? "bg-[#E21B4D] text-white shadow-lg"
                 : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
             )}
           >
             Umbrella+
-            <span className="absolute -top-2 -right-2 bg-accent text-accent-foreground text-xs px-2 py-1 rounded-full">
+            <span className="absolute -top-2 -right-2 bg-[#E21B4D] text-white text-xs px-2 py-1 rounded-full">
               Popular
             </span>
           </button>
@@ -92,13 +92,13 @@ const Services = () => {
             <div>
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold mb-2">
-                  Everything in Umbrella, <span className="text-gradient-warm">plus</span>:
+                  Everything in Umbrella, <span className="text-[#E21B4D] font-bold">plus</span>:
                 </h3>
               </div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {umbrellaPlusFeatures.map((feature, index) => (
-                  <div key={index} className="card-feature flex gap-4 border-2 border-accent/20">
-                    <div className="icon-circle-accent flex-shrink-0 w-12 h-12">
+                  <div key={index} className="card-feature flex gap-4 border-2 border-[#E21B4D]/20">
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center bg-[#E21B4D]/10 text-[#E21B4D] flex-shrink-0">
                       <feature.icon className="w-5 h-5" />
                     </div>
                     <div>
