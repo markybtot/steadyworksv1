@@ -51,6 +51,23 @@ const Hero = () => {
             </Button>
           </div>
 
+          {/* Gold HMRC Compliance Stamp */}
+          <div className="flex justify-center mb-12 animate-fade-up delay-400">
+            <div className="relative">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-[#D4AF37] bg-gradient-to-br from-[#FFD700] via-[#D4AF37] to-[#B8860B] flex items-center justify-center shadow-2xl transform rotate-[-8deg] hover:rotate-0 transition-transform duration-300">
+                <div className="w-28 h-28 md:w-36 md:h-36 rounded-full border-2 border-[#B8860B]/50 flex flex-col items-center justify-center text-center p-2">
+                  <span className="text-[#3D2914] font-extrabold text-xs md:text-sm uppercase tracking-wider">100%</span>
+                  <span className="text-[#3D2914] font-extrabold text-sm md:text-lg uppercase tracking-tight leading-tight">HMRC</span>
+                  <span className="text-[#3D2914] font-extrabold text-xs md:text-sm uppercase tracking-wider">Compliant</span>
+                  <div className="w-12 h-0.5 bg-[#3D2914]/40 my-1"></div>
+                  <span className="text-[#3D2914]/70 text-[8px] md:text-[10px] font-semibold uppercase">Verified</span>
+                </div>
+              </div>
+              {/* Shine effect */}
+              <div className="absolute top-2 left-4 w-6 h-6 md:w-8 md:h-8 bg-white/30 rounded-full blur-sm"></div>
+            </div>
+          </div>
+
           {/* Trust Badges */}
           <div className="flex flex-wrap justify-center gap-8 animate-fade-up delay-400">
             <div className="flex items-center gap-3 text-white/70">
@@ -60,15 +77,6 @@ const Hero = () => {
               <div className="text-left">
                 <p className="font-semibold text-white">Same Day</p>
                 <p className="text-sm">Setup</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 text-white/70">
-              <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
-                <BadgeCheck className="w-6 h-6 text-primary" />
-              </div>
-              <div className="text-left">
-                <p className="font-semibold text-white">100% HMRC</p>
-                <p className="text-sm">Compliant</p>
               </div>
             </div>
             <div className="flex items-center gap-3 text-white/70">
