@@ -4,7 +4,7 @@ import umbrellaIllustration from "@/assets/umbrella-illustration.png";
 const WhatIsUmbrella = () => {
   const points = [
     { text: "Become employed with all the benefits of a permanent role", highlight: null },
-    { text: "Tax and NI handled correctly ", highlight: "stay compliant with HMRC" },
+    { text: "Tax and NI handled correctly ", highlight: "stay fully compliant" },
     { text: "Continuous employment record for mortgages & loans", highlight: null },
     { text: "Work multiple contracts through one employer", highlight: null },
   ];
