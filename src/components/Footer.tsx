@@ -15,7 +15,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-background/70 mb-6">
-              The trusted umbrella company for UK contractors. FCSA accredited and HMRC compliant.
+              The trusted umbrella company for UK contractors.
             </p>
           </div>
 

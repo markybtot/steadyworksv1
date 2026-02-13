@@ -15,7 +15,7 @@ const Benefits = () => {
     {
       icon: Calculator,
       title: "Tax Made Simple",
-      description: "PAYE and National Insurance deductions made for you. Stay on the right side of HMRC without the stress.",
+      description: "PAYE and National Insurance deductions made for you. Stay compliant without the stress.",
     },
     {
       icon: Calendar,
