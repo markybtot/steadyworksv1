@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, HardHat, Building2 } from "lucide-react";
 import logo from "@/assets/logo.png";
 import heroBg from "@/assets/hero-bg.png";
 
@@ -17,7 +16,7 @@ const Landing = () => {
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center gap-10 px-6 text-center">
+      <div className="relative z-10 flex flex-col items-center gap-12 px-6 text-center">
         <img src={logo} alt="SteadyWorks" className="h-16 md:h-20 w-auto drop-shadow-lg" />
 
         <div>
@@ -29,23 +28,59 @@ const Landing = () => {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md">
+        <div className="flex flex-col sm:flex-row gap-6 w-full max-w-lg">
+          {/* Contractor Card */}
           <button
             onClick={() => navigate("/home")}
-            className="group flex-1 relative rounded-xl border-2 border-white/20 bg-white/10 backdrop-blur-md px-8 py-6 text-white font-semibold text-lg transition-all duration-300 hover:bg-primary hover:border-primary hover:scale-[1.03] hover:shadow-[0_0_40px_-10px_hsl(217_70%_55%/0.5)] active:scale-[0.98]"
+            className="group flex-1 relative rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.04] active:scale-[0.97]"
           >
-            <span className="block text-sm text-white/60 mb-1 group-hover:text-white/80 transition-colors">I'm a</span>
-            Contractor
-            <ArrowRight className="inline-block w-5 h-5 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
+            {/* Gradient bg */}
+            <div className="absolute inset-0 bg-gradient-to-br from-primary to-[hsl(217,80%,40%)] opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
+            {/* Shimmer effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700 ease-in-out" />
+            {/* Glow */}
+            <div className="absolute -inset-1 bg-primary/40 rounded-2xl blur-xl opacity-0 group-hover:opacity-60 transition-opacity duration-500" />
+
+            <div className="relative z-10 flex flex-col items-center gap-4 px-8 py-10">
+              <div className="w-16 h-16 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-white/25 transition-colors duration-300">
+                <HardHat className="w-8 h-8 text-white" />
+              </div>
+              <div>
+                <span className="block text-sm text-white/60 mb-1 group-hover:text-white/80 transition-colors">I'm a</span>
+                <span className="block text-2xl font-bold text-white">Contractor</span>
+              </div>
+              <div className="flex items-center gap-2 text-white/60 group-hover:text-white transition-colors text-sm font-medium">
+                Get started
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+              </div>
+            </div>
           </button>
 
+          {/* Agency Card */}
           <button
             onClick={() => navigate("/home")}
-            className="group flex-1 relative rounded-xl border-2 border-white/20 bg-white/10 backdrop-blur-md px-8 py-6 text-white font-semibold text-lg transition-all duration-300 hover:bg-accent hover:border-accent hover:scale-[1.03] hover:shadow-[0_0_40px_-10px_hsl(24_95%_53%/0.5)] active:scale-[0.98]"
+            className="group flex-1 relative rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.04] active:scale-[0.97]"
           >
-            <span className="block text-sm text-white/60 mb-1 group-hover:text-white/80 transition-colors">I'm an</span>
-            Agency
-            <ArrowRight className="inline-block w-5 h-5 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
+            {/* Gradient bg */}
+            <div className="absolute inset-0 bg-gradient-to-br from-accent to-[hsl(15,90%,45%)] opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
+            {/* Shimmer effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700 ease-in-out" />
+            {/* Glow */}
+            <div className="absolute -inset-1 bg-accent/40 rounded-2xl blur-xl opacity-0 group-hover:opacity-60 transition-opacity duration-500" />
+
+            <div className="relative z-10 flex flex-col items-center gap-4 px-8 py-10">
+              <div className="w-16 h-16 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-white/25 transition-colors duration-300">
+                <Building2 className="w-8 h-8 text-white" />
+              </div>
+              <div>
+                <span className="block text-sm text-white/60 mb-1 group-hover:text-white/80 transition-colors">I'm an</span>
+                <span className="block text-2xl font-bold text-white">Agency</span>
+              </div>
+              <div className="flex items-center gap-2 text-white/60 group-hover:text-white transition-colors text-sm font-medium">
+                Get started
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+              </div>
+            </div>
           </button>
         </div>
       </div>
