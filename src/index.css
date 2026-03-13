@@ -216,16 +216,17 @@
 .voltage-button button {
   color: white;
   background: #0D1127;
-  padding: 1rem 3rem;
+  padding: 0.7rem 2rem;
   border-radius: 5rem;
-  border: 5px solid hsl(var(--primary));
-  font-size: 1.2rem;
+  border: 3px solid hsl(var(--primary));
+  font-size: 0.95rem;
   line-height: 1em;
   letter-spacing: 0.075em;
   transition: background 0.3s;
   font-family: inherit;
   font-weight: 700;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .voltage-button button:hover {
