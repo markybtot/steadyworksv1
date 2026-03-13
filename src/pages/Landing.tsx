@@ -31,7 +31,7 @@ const Landing = () => {
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full">
           {/* Contractor Card */}
           <button
-            onClick={() => navigate("/home")}
+            onClick={() => navigate("/contractors")}
             className="group flex-1 relative rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.04] active:scale-[0.97]"
           >
             {/* Gradient bg */}
