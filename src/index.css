@@ -206,56 +206,155 @@
   .icon-circle-accent {
     @apply w-16 h-16 rounded-full flex items-center justify-center bg-accent/10 text-accent;
   }
+}
 
-  .uiverse-btn {
-    font-family: inherit;
-    font-size: 20px;
-    background: #212121;
-    color: white;
-    fill: rgb(155, 153, 153);
-    padding: 0.7em 1em;
-    padding-left: 0.9em;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-    border-radius: 15px;
-    font-weight: 1000;
+/* Voltage Button */
+.voltage-button {
+  position: relative;
+}
+
+.voltage-button button {
+  color: white;
+  background: #0D1127;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+  border: 5px solid hsl(var(--primary));
+  font-size: 1.2rem;
+  line-height: 1em;
+  letter-spacing: 0.075em;
+  transition: background 0.3s;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.voltage-button button:hover {
+  background: #0F1C53;
+}
+
+.voltage-button button:hover + svg,
+.voltage-button button:hover + svg + .dots {
+  opacity: 1;
+}
+
+.voltage-button svg {
+  display: block;
+  position: absolute;
+  top: -0.75em;
+  left: -0.25em;
+  width: calc(100% + 0.5em);
+  height: calc(100% + 1.5em);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s;
+  transition-delay: 0.1s;
+}
+
+.voltage-button svg path {
+  stroke-dasharray: 100;
+  filter: url(#glow);
+}
+
+.voltage-button svg path.line-1 {
+  stroke: #f6de8d;
+  stroke-dashoffset: 0;
+  animation: spark-1 3s linear infinite;
+}
+
+.voltage-button svg path.line-2 {
+  stroke: #6bfeff;
+  stroke-dashoffset: 500;
+  animation: spark-2 3s linear infinite;
+}
+
+.voltage-button .dots {
+  opacity: 0;
+  transition: opacity 0.3s;
+  transition-delay: 0.4s;
+}
+
+.voltage-button .dots .dot {
+  width: 1rem;
+  height: 1rem;
+  background: white;
+  border-radius: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.voltage-button .dots .dot-1 {
+  top: 0;
+  left: 20%;
+  animation: fly-up 3s linear infinite;
+}
+
+.voltage-button .dots .dot-2 {
+  top: 0;
+  left: 55%;
+  animation: fly-up 3s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.voltage-button .dots .dot-3 {
+  top: 0;
+  left: 80%;
+  animation: fly-up 3s linear infinite;
+  animation-delay: 1s;
+}
+
+.voltage-button .dots .dot-4 {
+  bottom: 0;
+  left: 30%;
+  animation: fly-down 3s linear infinite;
+  animation-delay: 2.5s;
+}
+
+.voltage-button .dots .dot-5 {
+  bottom: 0;
+  left: 65%;
+  animation: fly-down 3s linear infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes spark-1 {
+  to {
+    stroke-dashoffset: -1000;
   }
+}
 
-  .uiverse-btn span {
-    display: block;
-    margin-left: 0.3em;
-    transition: all 0.3s ease-in-out;
+@keyframes spark-2 {
+  to {
+    stroke-dashoffset: -500;
   }
+}
 
-  .uiverse-btn svg {
-    display: block;
-    transform-origin: center center;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .uiverse-btn:hover {
-    background: #000;
-  }
-
-  .uiverse-btn:hover .svg-wrapper {
-    transform: scale(1.25);
-    transition: 0.5s linear;
-  }
-
-  .uiverse-btn:hover svg {
-    transform: translateX(1.2em) scale(1.1);
-    fill: #fff;
-  }
-
-  .uiverse-btn:hover span {
+@keyframes fly-up {
+  0% {
     opacity: 0;
-    transition: 0.5s linear;
+    transform: translateY(0) scale(0.2);
   }
+  5% {
+    opacity: 1;
+    transform: translateY(-1.5rem) scale(0.4);
+  }
+  10%, 100% {
+    opacity: 0;
+    transform: translateY(-3rem) scale(0.2);
+  }
+}
 
-  .uiverse-btn:active {
-    transform: scale(0.95);
+@keyframes fly-down {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.2);
+  }
+  5% {
+    opacity: 1;
+    transform: translateY(1.5rem) scale(0.4);
+  }
+  10%, 100% {
+    opacity: 0;
+    transform: translateY(3rem) scale(0.2);
   }
 }
 
