@@ -41,9 +41,9 @@ const Landing = () => {
             {/* Glow */}
             <div className="absolute -inset-1 bg-primary/40 rounded-2xl blur-xl opacity-0 group-hover:opacity-60 transition-opacity duration-500" />
 
-            <div className="relative z-10 flex flex-col items-center gap-4 px-8 py-10">
-              <div className="w-16 h-16 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-white/25 transition-colors duration-300">
-                <HardHat className="w-8 h-8 text-white" />
+            <div className="relative z-10 flex flex-col items-center gap-3 sm:gap-4 px-6 py-8 sm:px-8 sm:py-10">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-white/25 transition-colors duration-300">
+                <HardHat className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
               <div>
                 <span className="block text-sm text-white/60 mb-1 group-hover:text-white/80 transition-colors">I'm a</span>
