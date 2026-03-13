@@ -16,8 +16,8 @@ const Landing = () => {
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center gap-12 px-6 text-center">
-        <img src={logo} alt="SteadyWorks" className="h-24 md:h-32 w-auto drop-shadow-2xl border-4 border-white/80 rounded-xl p-3 bg-white/10 backdrop-blur-sm" />
+      <div className="relative z-10 flex flex-col items-center gap-8 md:gap-12 px-4 sm:px-6 py-8 text-center w-full max-w-xl mx-auto">
+        <img src={logo} alt="SteadyWorks" className="h-20 sm:h-24 md:h-32 w-auto drop-shadow-2xl border-4 border-white/80 rounded-xl p-2 sm:p-3 bg-white/10 backdrop-blur-sm" />
 
         <div>
           <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3">
