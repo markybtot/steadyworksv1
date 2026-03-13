@@ -1,7 +1,53 @@
 import { useNavigate } from "react-router-dom";
-import { HardHat, Building2 } from "lucide-react";
 import logo from "@/assets/logo.png";
 import heroBg from "@/assets/hero-bg.png";
+
+const VoltageButton = ({ label, onClick }: { label: string; onClick: () => void }) => (
+  <div className="voltage-button">
+    <button onClick={onClick}>{label}</button>
+    <svg
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      viewBox="0 0 234 61"
+      xmlSpace="preserve"
+    >
+      <defs>
+        <filter id="glow">
+          <feGaussianBlur className="blur" result="coloredBlur" stdDeviation="2" />
+          <feMerge>
+            <feMergeNode in="coloredBlur" />
+            <feMergeNode in="coloredBlur" />
+            <feMergeNode in="coloredBlur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+      <path
+        className="line-1"
+        d="M234 half C234 half, 0 half, 0 half"
+        style={{ "--half": "30.5" } as React.CSSProperties}
+        fill="none"
+        strokeWidth="2"
+      />
+      <path
+        className="line-2"
+        d="M234 half C234 half, 0 half, 0 half"
+        style={{ "--half": "30.5" } as React.CSSProperties}
+        fill="none"
+        strokeWidth="2"
+      />
+    </svg>
+    <div className="dots">
+      <div className="dot dot-1" />
+      <div className="dot dot-2" />
+      <div className="dot dot-3" />
+      <div className="dot dot-4" />
+      <div className="dot dot-5" />
+    </div>
+  </div>
+);
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -28,26 +74,9 @@ const Landing = () => {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full justify-center">
-          <button
-            onClick={() => navigate("/contractors")}
-            className="uiverse-btn"
-          >
-            <div className="svg-wrapper">
-              <HardHat className="w-6 h-6" />
-            </div>
-            <span>I'm a Contractor</span>
-          </button>
-
-          <button
-            onClick={() => navigate("/agencies")}
-            className="uiverse-btn"
-          >
-            <div className="svg-wrapper">
-              <Building2 className="w-6 h-6" />
-            </div>
-            <span>I'm an Agency</span>
-          </button>
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 w-full justify-center items-center">
+          <VoltageButton label="I'm a Contractor" onClick={() => navigate("/contractors")} />
+          <VoltageButton label="I'm an Agency" onClick={() => navigate("/agencies")} />
         </div>
       </div>
     </div>
