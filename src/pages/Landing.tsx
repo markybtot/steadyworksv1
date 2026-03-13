@@ -17,7 +17,7 @@ const Landing = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center gap-12 px-6 text-center">
-        <img src={logo} alt="SteadyWorks" className="h-16 md:h-20 w-auto drop-shadow-lg" />
+        <img src={logo} alt="SteadyWorks" className="h-24 md:h-32 w-auto drop-shadow-2xl border-4 border-white/80 rounded-xl p-3 bg-white/10 backdrop-blur-sm" />
 
         <div>
           <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3">
