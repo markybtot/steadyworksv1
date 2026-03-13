@@ -28,7 +28,7 @@ const Landing = () => {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-6 w-full max-w-lg">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full">
           {/* Contractor Card */}
           <button
             onClick={() => navigate("/home")}
