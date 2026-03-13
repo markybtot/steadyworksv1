@@ -7,7 +7,7 @@ const Landing = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative min-h-[100dvh] flex flex-col items-center justify-center overflow-hidden">
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
