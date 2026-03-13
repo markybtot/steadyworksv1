@@ -47,7 +47,7 @@ const Landing = () => {
               </div>
               <div>
                 <span className="block text-sm text-white/60 mb-1 group-hover:text-white/80 transition-colors">I'm a</span>
-                <span className="block text-2xl font-bold text-white">Contractor</span>
+                <span className="block text-xl sm:text-2xl font-bold text-white">Contractor</span>
               </div>
               <div className="flex items-center gap-2 text-white/60 group-hover:text-white transition-colors text-sm font-medium">
                 Get started
