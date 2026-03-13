@@ -26,15 +26,13 @@ const VoltageButton = ({ label, onClick }: { label: string; onClick: () => void 
       </defs>
       <path
         className="line-1"
-        d="M234 half C234 half, 0 half, 0 half"
-        style={{ "--half": "30.5" } as React.CSSProperties}
+        d="M2 30.5 C2 30.5, 232 30.5, 232 30.5"
         fill="none"
         strokeWidth="2"
       />
       <path
         className="line-2"
-        d="M234 half C234 half, 0 half, 0 half"
-        style={{ "--half": "30.5" } as React.CSSProperties}
+        d="M2 30.5 C2 30.5, 232 30.5, 232 30.5"
         fill="none"
         strokeWidth="2"
       />
