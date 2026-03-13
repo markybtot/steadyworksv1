@@ -58,7 +58,7 @@ const Landing = () => {
 
           {/* Agency Card */}
           <button
-            onClick={() => navigate("/home")}
+            onClick={() => navigate("/agencies")}
             className="group flex-1 relative rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.04] active:scale-[0.97]"
           >
             {/* Gradient bg */}
