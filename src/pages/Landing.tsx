@@ -29,58 +29,18 @@ const Landing = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full">
-          {/* Contractor Card */}
           <button
             onClick={() => navigate("/contractors")}
-            className="group flex-1 relative rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.04] active:scale-[0.97]"
+            className="landing-btn flex-1"
           >
-            {/* Gradient bg */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary to-[hsl(217,80%,40%)] opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
-            {/* Shimmer effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700 ease-in-out" />
-            {/* Glow */}
-            <div className="absolute -inset-1 bg-primary/40 rounded-2xl blur-xl opacity-0 group-hover:opacity-60 transition-opacity duration-500" />
-
-            <div className="relative z-10 flex flex-col items-center gap-3 sm:gap-4 px-6 py-8 sm:px-8 sm:py-10">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-white/25 transition-colors duration-300">
-                <HardHat className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
-              </div>
-              <div>
-                <span className="block text-sm text-white/60 mb-1 group-hover:text-white/80 transition-colors">I'm a</span>
-                <span className="block text-xl sm:text-2xl font-bold text-white">Contractor</span>
-              </div>
-              <div className="flex items-center gap-2 text-white/60 group-hover:text-white transition-colors text-sm font-medium">
-                Get started
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-              </div>
-            </div>
+            I'm a Contractor
           </button>
 
-          {/* Agency Card */}
           <button
             onClick={() => navigate("/agencies")}
-            className="group flex-1 relative rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.04] active:scale-[0.97]"
+            className="landing-btn flex-1"
           >
-            {/* Gradient bg */}
-            <div className="absolute inset-0 bg-gradient-to-br from-accent to-[hsl(15,90%,45%)] opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
-            {/* Shimmer effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700 ease-in-out" />
-            {/* Glow */}
-            <div className="absolute -inset-1 bg-accent/40 rounded-2xl blur-xl opacity-0 group-hover:opacity-60 transition-opacity duration-500" />
-
-            <div className="relative z-10 flex flex-col items-center gap-3 sm:gap-4 px-6 py-8 sm:px-8 sm:py-10">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white/15 flex items-center justify-center group-hover:bg-white/25 transition-colors duration-300">
-                <Building2 className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
-              </div>
-              <div>
-                <span className="block text-sm text-white/60 mb-1 group-hover:text-white/80 transition-colors">I'm an</span>
-                <span className="block text-xl sm:text-2xl font-bold text-white">Agency</span>
-              </div>
-              <div className="flex items-center gap-2 text-white/60 group-hover:text-white transition-colors text-sm font-medium">
-                Get started
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-              </div>
-            </div>
+            I'm an Agency
           </button>
         </div>
       </div>
