@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { HardHat, Building2 } from "lucide-react";
 import logo from "@/assets/logo.png";
 import heroBg from "@/assets/hero-bg.png";
 
@@ -27,19 +28,25 @@ const Landing = () => {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full justify-center">
           <button
             onClick={() => navigate("/contractors")}
-            className="landing-btn flex-1"
+            className="uiverse-btn"
           >
-            I'm a Contractor
+            <div className="svg-wrapper">
+              <HardHat className="w-6 h-6" />
+            </div>
+            <span>I'm a Contractor</span>
           </button>
 
           <button
             onClick={() => navigate("/agencies")}
-            className="landing-btn flex-1"
+            className="uiverse-btn"
           >
-            I'm an Agency
+            <div className="svg-wrapper">
+              <Building2 className="w-6 h-6" />
+            </div>
+            <span>I'm an Agency</span>
           </button>
         </div>
       </div>
