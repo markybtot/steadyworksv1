@@ -20,7 +20,7 @@ const Landing = () => {
         <img src={logo} alt="SteadyWorks" className="h-20 sm:h-24 md:h-32 w-auto drop-shadow-2xl border-4 border-white/80 rounded-xl p-2 sm:p-3 bg-white/10 backdrop-blur-sm" />
 
         <div>
-          <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-white mb-3">
             Welcome to <span className="text-gradient">SteadyWorks</span>
           </h1>
           <p className="text-white/70 text-lg md:text-xl max-w-md mx-auto">
